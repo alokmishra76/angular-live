@@ -1,0 +1,6 @@
+<div class="todo-from">
+    <form [formGroup]="todoForm">
+        <input matInput type="text" placeholder="Enter todo" formControlName="taskName" #inputFiled/>
+    </form>
+    <button (click)="addTodo()">Add Todo</button>
+</div>

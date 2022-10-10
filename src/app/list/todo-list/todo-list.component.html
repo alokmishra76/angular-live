@@ -1,0 +1,13 @@
+<ng-container *ngIf="todoList.length === 0">
+    <div (click)="makeInputFieldFocus()">
+        <h1>There aren't any todos. Why don't you create one</h1>
+    </div>
+</ng-container>
+<div class="todo-list">
+    <div class="todo-item" *ngFor="let item of todoList">
+        <input matInput [(ngModel)] = "item.taskName" />
+        <button (click)="deleteTodo(item.id)">Delete</button>
+        <button (click)="updateTodo(item)">Update</button>
+        <input type="checkbox" (change)="getCheckedData($event, item)" />
+    </div>
+</div>

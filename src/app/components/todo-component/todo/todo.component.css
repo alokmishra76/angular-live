@@ -1,0 +1,8 @@
+.todo-from {
+    margin-top: 30px;
+    display: flex;
+}
+
+.focus-input {
+  border: 1px solid black;
+}
